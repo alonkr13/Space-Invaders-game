@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C83B35F-6EF1-4357-9B2D-FC10C80A6847}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OOP_Project_Alon_Itzik</RootNamespace>
+    <AssemblyName>OOP_Project_Alon_Itzik</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Battleship.cs" />
+    <Compile Include="Bullet.cs" />
+    <Compile Include="Enemy.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShieldedEnemy.cs" />
+    <Compile Include="Spaceship.cs" />
+    <Compile Include="Turret.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Space-Invaders-Enemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Space-Invaders-Player_0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Space-Invaders-Enemy-resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Space-Invaders-Enemy-resized1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Blue_Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Green_Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Red_Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pictures\Yellow_Bullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\Laser.wav" />
+    <None Include="Pictures\Space-Invaders-Turret.png" />
+    <None Include="Pictures\Space-Invaders-Enemy_resized2.png" />
+    <None Include="Pictures\Space-Invaders-ShieldedEnemy.png" />
+    <None Include="Pictures\Space_bg 4.jpg" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_0.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_1.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_2.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_3.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_4.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_5.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_6.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_7.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_8.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_9.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_10.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_11.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_12.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_13.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_14.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_15.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_16.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_17.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_18.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_19.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_20.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_21.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_22.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_23.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_24.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_25.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_26.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_27.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_28.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_29.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_30.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_31.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_32.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_33.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_34.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_35.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_36.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_37.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_38.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_39.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_40.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_41.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_42.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_43.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_44.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_45.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_46.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_47.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_48.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_49.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_50.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_51.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_52.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_53.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_54.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_55.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_56.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_57.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_58.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_59.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_60.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_61.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_62.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_63.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_64.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_65.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_66.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_67.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_68.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_69.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_70.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_71.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_72.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_73.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_74.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_75.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_76.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_77.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_78.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_79.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_80.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_81.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_82.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_83.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_84.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_85.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_86.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_87.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_88.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_89.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_90.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_91.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_92.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_93.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_94.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_95.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_96.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_97.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_98.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_99.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_100.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_101.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_102.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_103.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_104.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_105.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_106.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_107.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_108.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_109.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_110.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_111.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_112.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_113.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_114.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_115.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_116.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_117.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_118.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_119.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_120.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_121.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_122.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_123.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_124.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_125.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_126.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_127.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_128.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_129.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_130.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_131.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_132.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_133.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_134.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_135.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_136.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_137.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_138.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_139.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_140.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_141.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_142.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_143.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_144.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_145.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_146.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_147.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_148.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_149.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_150.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_151.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_152.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_153.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_154.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_155.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_156.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_157.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_158.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_159.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_160.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_161.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_162.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_163.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_164.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_165.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_166.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_167.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_168.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_169.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_170.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_171.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_172.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_173.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_174.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_175.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_176.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_177.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_178.png" />
+    <None Include="Pictures\Space-Invaders-Player-rotation\Space-Invaders-Player_179.png" />
+    <Content Include="Pictures\Space-Invaders-Player_0.png" />
+    <None Include="Pictures\SpaceInvaders.ico" />
+    <Content Include="Resources\Space-Invaders-ShieldedEnemy.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
